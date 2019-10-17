@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         registerReceiver(myBRC, IntentFilter("android.intent.action.AIRPLANE_MODE"))
         registerReceiver(myBRC, IntentFilter("android.intent.action.TIMEZONE_CHANGED"))
         registerReceiver(myBRC, IntentFilter("android.intent.action.ACTION_SHUTDOWN"))
+        registerReceiver(myBRC, IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"))
 
         supportFragmentManager.beginTransaction()
             .add(R.id.frag1_framelayout, fragment1)
